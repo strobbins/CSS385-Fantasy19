@@ -11,7 +11,7 @@
 		<p>Team Name: The Pretty Little Princesses (Fantasy 19)</p>
 		<p>Team Members: Sarah Robbins, Dakota Sagredo, & Rachael Tustison</p>
 		<p>Project working title: Pachycephalosaurus</p>
-		<p>Name actually used: Gravity Game</p>
+		<p>Title actually used: Gravity Game</p>
 		<p><a href="https://github.com/strobbins/CSS385-Final-Project">Project repository</a></p>
 		<p><a href="https://strobbins.github.io/CSS385-Final-Project/">Project build</a></p>
 		<p><a href="https://docs.google.com/presentation/d/15mDs1_sokYGtzQTrhCO_X7EKdpvryRyeg2mY93e6Spo/edit?usp=sharing">Postmortem presentation</a></p>
@@ -24,9 +24,9 @@
 		<p>Some of the major features of the game include:
 		<ul>
 		<li>Gravity switching in four directions: up, down, left, or right</li>
-		<li>Moving platforms.</li>
-		<li>Smashing blocks.</li>
-		<li>Box helpers.</li>
+		<li>Moving platforms</li>
+		<li>Smashing blocks</li>
+		<li>Box helpers</li>
 		</ul>
 		</p>
 		<br />
@@ -47,7 +47,7 @@
 		<ul>
 			<li>During the week, the "AttachPlayer" and "Gravity" scripts were created. Gravity is used for changing the (currently) vertical gravity of the player between up and down. This will also rotate the player's orientation so that they are always right side up in regards to wherever gravity is pulling from. AttachPlayer is used for moving platforms, so that when the player touches the platform they will move with the platform, instead of just having the platform slide out from underneath them.</li>
 			<li>Additionally, the "Move", "Jump", and "CameraFollow" scripts were borrowed from Unity Playground. The Move script was modified to restrict the player's max velocity. The CameraFollow script was modified so that it didn't follow the character so closely.</li>
-			<li>The asset pack we are using is the <a href="https://assetstore.unity.com/packages/2d/environments/free-asset-2d-handcrafted-art-117049"> 2D Handcrafted Art Asset Pack</a>. This asset pack is mostly being used to create the scene/level background design, which we started building this week.</li>
+			<li>The asset pack we are using is the <a href="https://assetstore.unity.com/packages/2d/environments/free-asset-2d-handcrafted-art-117049">Free Asset - 2D Handcrafted Art</a> pack. This asset pack is mostly being used to create the scene/level background design, which we started building this week.</li>
 			<li>The "character" being used for now is just a 3D cube; a sprite has not yet been implemented.</li>
 		</ul>
 		<p><u>May 16, 2019</u></p>
@@ -154,7 +154,7 @@
 			<li>Should not be able to lose big blocks.</li>
 			<li>Improve puzzle-making.</li>
 		</ul>
-		<p><u>Final (June 6, 2019 - June 9, 2019)</u></p>
+		<p><u>Final, in-class (June 6, 2019)</u></p>
 		<ul>
 			<li>Make character rotate.</li>
 			<li>Too easy to accidentally skip puzzles.</li>
@@ -166,6 +166,11 @@
 			<li>Shorten crashing boxes puzzle.</li>
 			<li>Finish the unfinished parts.</li>
 		</ul> 
+		<p><u>Final, outside of class (June 9, 2019)</u></p>
+		<ul>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ZNO7yIjfMlha5xrxGRMoKPx96PJa1pNCOhnnMGywiy0b9Q/viewform?usp=sf_link">Feedback Form</a></li>
+			<li><a href="https://docs.google.com/spreadsheets/d/10Ac1uUppi2sdc6nJLw-WBZdIzQn7Mgw652p6ZKe1qfU/edit?usp=sharing">Feedback Results</a></li>
+		</ul>
 		<br />
 		<h2>Graphics</h2>
 		<h3>Initial Designs</h3>
@@ -199,7 +204,7 @@
 			<figcaption>In-progress screenshot of whole game</figcaption>
 		</figure>
 		<br />
-		<h3>Screenshots from Final Presentation</h3>
+		<h3>Screenshots from Final Presentation (June 6, 2019)</h3>
 		<figure>
 			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%201.png?raw=true" alt="Character in game">
 			<figcaption>Character in game</figcaption>
@@ -220,6 +225,13 @@
 			<p style="margin-left: 30px"><img src="https://i.imgur.com/QAVw7BI.gif" alt="Walking Animation" width="64" height="64"></p>
 			<figcaption>Walking Animation</figcaption>
 		</figure>
+		<br />
+		<h2>Team Reflection</h2>
+		<p>One of the things our team did really well was supporting each others' ideas and values that we each brought to the project.</p> 
+		<p>Some of the evidence we can show for this is the character animations, the trailer, the sound effects, the 2D art assets, the code, and the website. All of these were done sometimes individually, but always with the support of the other team members.</p>
+		<p>One of our highest priority items if we had two more weeks to work on this would be to have the character sprite face the direction that they are moving. This was possible to do, but it would ruin the rotation orientation of the sprite when the gravity would be flipped, and having the character oriented correctly was more important.</p> 
+		<p>Another high priority item would be to have the sound of the crushing walls work in 3D space, instead of having to compromise with the sound being in 2D space. What this means is that the sound of the crushing walls was supposed to not be heard unless within a certain range, and would get louder as you moved closer to them. It would also play from the left or right speaker depending on if the walls were to the left or right of the camera. This worked when the level was loaded directly through Unity, but would not work when loaded from the main menu, thus the sound was converted to 2D since that was better than the silent/glitchy alternative.</p>
+		<p>Lastly, a third high priority item would be to create an animation for the character sprite when the gravity is flipped. As it is right now, there is not one, so if the gravity is flipped while the character is in the running animation, it will continue that running animation while falling through the air. This wouldn't have been a hard addition to make; this was simply a time problem to have implemented.</p>
 		<br />
 		<h2>References</h2>
 		<p>Assets:
