@@ -5,175 +5,374 @@
   </head>
   <body>
 	<div class="container" style="font-family: Helvetica;">
-	  <h1>CSS 385 Final Game Project</h1>
-	  <hr>
-	<div class="info">
-	  <h2>Project Info</h2>
-	  <p>Team Name: The Pretty Little Princesses (Fantasy 19)</p>
-	  <p>Team Members: Sarah Robbins, Dakota Sagredo, & Rachael Tustison</p>
-	  <p>Project working title: Pachycephalosaurus</p>
-	  <p>Name actually used: Gravity Game</p>
-	  <p><a href="https://github.com/strobbins/CSS385-Final-Project">Project repository</a></p>
-	  <p><a href="https://strobbins.github.io/CSS385-Final-Project/">Project build</a></p>
-	  <p><a href="https://docs.google.com/presentation/d/15mDs1_sokYGtzQTrhCO_X7EKdpvryRyeg2mY93e6Spo/edit?usp=sharing">Postmortem presentation</a></p>
-						
-	  <h2>Project Description</h2>
-	  <p>The class theme is fantasy, so our team decided to make a game featuring a space explorer who has crash-landed onto a fantastical world. Our game follows our explorer as they wander through this world, in the form of a puzzle platformer. We feel this fulfills the fantasy requirement as the world has fantastical elements, and many elements of the game are fantastical as well. While it may be perceived as science fiction, many science fiction works can also fall under the broad umbrella of fantasy, which really just refers to anything imagined or not based on reality.</p>
-	  <p>The main inspiration of this game comes from 2D puzzle platformer games such as <em>Limbo</em> or <em>Inside</em>, both from Danish indie developer Playdead.
-	  <p>Some of the major features of the game include:
-	  <ul>
-	  <li>Gravity switching in four directions: up, down, left, or right</li>
-	  <li>Moving platforms.</li>
-	  <li>Smashing blocks.</li>
-	  </ul>
-	  </p>
-	</div><!-- /.info -->
-	<div class="log">
-	  <h2>Development Log</h2>
+		<h1>CSS 385 Final Game Project</h1>
+		<hr>
+		<h2>Project Info</h2>
+		<p>Team Name: The Pretty Little Princesses (Fantasy 19)</p>
+		<p>Team Members: Sarah Robbins, Dakota Sagredo, & Rachael Tustison</p>
+		<p>Project working title: Pachycephalosaurus</p>
+		<p>Name actually used: Gravity Game</p>
+		<p><a href="https://github.com/strobbins/CSS385-Final-Project">Project repository</a></p>
+		<p><a href="https://strobbins.github.io/CSS385-Final-Project/">Project build</a></p>
+		<p><a href="https://docs.google.com/presentation/d/15mDs1_sokYGtzQTrhCO_X7EKdpvryRyeg2mY93e6Spo/edit?usp=sharing">Postmortem presentation</a></p>
+		<p><a href="https://docs.google.com/presentation/d/1tERfmpHVLTGdsCg7BbWi-ZHHGa4GxRNFUhDH8ESJ0YE/edit?usp=sharing">Final slide</a></p>
+		<p><a href="https://youtu.be/QvlCxa-eD7I">Trailer</a></p>
+		<br />			
+		<h2>Project Description</h2>
+		<p>The class theme is fantasy, so our team decided to make a game featuring a space explorer who has crash-landed onto a fantastical world. Our game follows our explorer as they wander through this world, in the form of a puzzle platformer. We feel this fulfills the fantasy requirement as the world has fantastical elements, and many elements of the game are fantastical as well. While it may be perceived as science fiction, many science fiction works can also fall under the broad umbrella of fantasy, which really just refers to anything imagined or not based on reality.</p>
+		<p>The main inspiration of this game comes from 2D puzzle platformer games such as <em>Limbo</em> or <em>Inside</em>, both from Danish indie developer Playdead.
+		<p>Some of the major features of the game include:
+		<ul>
+		<li>Gravity switching in four directions: up, down, left, or right</li>
+		<li>Moving platforms.</li>
+		<li>Smashing blocks.</li>
+		<li>Box helpers.</li>
+		</ul>
+		</p>
+		<br />
+		<h2>Development Log</h2>
 		<p><u>May 8, 2019</u></p>
 		<ul>
-		  <li>Development Log created.</li>
-		  <li>Game planning Google doc created. This is used as a brainstorm, to keep track of our ideas.</li>
-		  <li>Sprite/character sketches created. These include two versions of a character in a space suit.</li>
-		  <li>Diagrams indicating how the gravity mechanic will work were also created.</li>
+			<li>Development Log created.</li>
+			<li>Game planning Google doc created. This is used as a brainstorm, to keep track of our ideas.</li>
+			<li>Sprite/character sketches created. These include two versions of a character in a space suit.</li>
+			<li>Diagrams indicating how the gravity mechanic will work were also created.</li>
 		</ul>
 		<p><u>May 9, 2019</u></p>
 		<ul>
-		  <li>Paper prototype created, in the form of a PowerPoint presentation. It includes info on the game's premise, the world design, the sprite/character design, the mechanics and gameplay, an example of what a puzzle might look like, assets used, and inspiration for the game idea.</li>
-		  <li>Presentation of paper prototype.</li>
+			<li>Paper prototype created, in the form of a PowerPoint presentation. It includes info on the game's premise, the world design, the sprite/character design, the mechanics and gameplay, an example of what a puzzle might look like, assets used, and inspiration for the game idea.</li>
+			<li>Presentation of paper prototype.</li>
 		</ul>
 		<p><u>May 15, 2019</u></p>
 		<ul>
-		  <li>During the week, the "AttachPlayer" and "Gravity" scripts were created. Gravity is used for changing the (currently) vertical gravity of the player between up and down. This will also rotate the player's orientation so that they are always right side up in regards to wherever gravity is pulling from. AttachPlayer is used for moving platforms, so that when the player touches the platform they will move with the platform, instead of just having the platform slide out from underneath them.</li>
-		  <li>Additionally, the "Move", "Jump", and "CameraFollow" scripts were borrowed from Unity Playground. The Move script was modified to restrict the player's max velocity. The CameraFollow script was modified so that it didn't follow the character so closely.</li>
-		  <li>The asset pack we are using is the <a href="https://assetstore.unity.com/packages/2d/environments/free-asset-2d-handcrafted-art-117049"> 2D Handcrafted Art Asset Pack</a>. This asset pack is mostly being used to create the scene/level background design, which we started building this week.</li>
-		  <li>The "character" being used for now is just a 3D cube; a sprite has not yet been implemented.</li>
+			<li>During the week, the "AttachPlayer" and "Gravity" scripts were created. Gravity is used for changing the (currently) vertical gravity of the player between up and down. This will also rotate the player's orientation so that they are always right side up in regards to wherever gravity is pulling from. AttachPlayer is used for moving platforms, so that when the player touches the platform they will move with the platform, instead of just having the platform slide out from underneath them.</li>
+			<li>Additionally, the "Move", "Jump", and "CameraFollow" scripts were borrowed from Unity Playground. The Move script was modified to restrict the player's max velocity. The CameraFollow script was modified so that it didn't follow the character so closely.</li>
+			<li>The asset pack we are using is the <a href="https://assetstore.unity.com/packages/2d/environments/free-asset-2d-handcrafted-art-117049"> 2D Handcrafted Art Asset Pack</a>. This asset pack is mostly being used to create the scene/level background design, which we started building this week.</li>
+			<li>The "character" being used for now is just a 3D cube; a sprite has not yet been implemented.</li>
 		</ul>
 		<p><u>May 16, 2019</u></p>
 		<ul>
-		  <li>Created the beginnings of code to implement a pendulum effect on future lantern sprites, so that they sway in the direction of the character's gravity.</li>
-		  <li>Created an animation for a moving platform, and made it so the character does not slide off moving platform.</li>
-		  <li>Added a block that the player can affect with their gravity.</li>
+			<li>Created the beginnings of code to implement a pendulum effect on future lantern sprites, so that they sway in the direction of the character's gravity.</li>
+			<li>Created an animation for a moving platform, and made it so the character does not slide off moving platform.</li>
+			<li>Added a block that the player can affect with their gravity.</li>
 		</ul>
 		<p><u>May 21, 2019</u></p>
 		<ul>
-		  <li>Last week and earlier this week, four scenes were created. The first scene is a main menu that links to the core game and three digital protoypes. These three prototypes are the other new scenes.</li> 
-		  <li>The first of them is the gravity protoype. It demonstrates the gravity swapping, the pendulum effect of a lantern on a chain, and another larger box that has more mass and is more resistant to the gravity pull. The lantern emits light and has particle effects that come off it to simulate cinders (this looks especially nice when it is swinging), and the chain is connected together with different join pieces so they move separately. However, this is not affected by gravity (the joint pieces disconnect and start to just float separately from each other), but the cube player and the other box can still have an effect on it by hitting it and getting it to swing. </li>
-		  <li>The second scene demonstrates moving platforms. Specifically, the player's ability to stick on a platform while it moves, without sliding off. Also, two big platforms that smack together, which are part of a death zone trigger, and if you die youl will be respawned at the last checkpoint you passed.</li>
-		  <li>The third scene illustrates not only up and down gravity, but left and right gravity as well.</li>
-		  <li>Presentation of digital prototypes.</li>
+			<li>Last week and earlier this week, four scenes were created. The first scene is a main menu that links to the core game and three digital protoypes. These three prototypes are the other new scenes.</li> 
+			<li>The first of them is the gravity protoype. It demonstrates the gravity swapping, the pendulum effect of a lantern on a chain, and another larger box that has more mass and is more resistant to the gravity pull. The lantern emits light and has particle effects that come off it to simulate cinders (this looks especially nice when it is swinging), and the chain is connected together with different join pieces so they move separately. However, this is not affected by gravity (the joint pieces disconnect and start to just float separately from each other), but the cube player and the other box can still have an effect on it by hitting it and getting it to swing. </li>
+			<li>The second scene demonstrates moving platforms. Specifically, the player's ability to stick on a platform while it moves, without sliding off. Also, two big platforms that smack together, which are part of a death zone trigger, and if you die youl will be respawned at the last checkpoint you passed.</li>
+			<li>The third scene illustrates not only up and down gravity, but left and right gravity as well.</li>
+			<li>Presentation of digital prototypes.</li>
 		</ul>
 		<p><u>May 22, 2019</u></p>
 		<ul>
-		  <li>Yesterday the spacesuit character sprites were updated. They now incorporate two different animations: walking and jumping.
-		  <li>Additionally, preparations for the Alpha Playtest began. The main level, gravity script, jump script, and deathzone script were all updated. Some additions were also made: new animations in main level, menuReturn script, sound script, and AudioManager script.</li>
+			<li>Yesterday the spacesuit character sprites were updated. They now incorporate two different animations: walking and jumping.
+			<li>Additionally, preparations for the Alpha Playtest began. The main level, gravity script, jump script, and deathzone script were all updated. Some additions were also made: new animations in main level, menuReturn script, sound script, and AudioManager script.</li>
 		</ul>
 		<p><u>May 23, 2019</u></p>
 		<ul>
-		  <li>Finished up alpha work. This included adding an OptionsMenuManager script, adding a canvas to the main level, and adding a DeleteText script. Also finished implementing the AudioManager object which will manage the audio in the scene. Along with this, some audio files were imported, which are listed in the References section below.</li>
-		  <li>Alpha Playtest session in class (Part 1).</li>
+			<li>Finished up alpha work. This included adding an OptionsMenuManager script, adding a canvas to the main level, and adding a DeleteText script. Also finished implementing the AudioManager object which will manage the audio in the scene. Along with this, some audio files were imported, which are listed in the References section below.</li>
+			<li>Alpha Playtest session in class (Part 1).</li>
 		</ul>
 		<p><u>May 28, 2019</u></p>
 		<ul>
-		  <li>Adjusted camera slightly, so that more of the scene is visible.</li>
-		  <li>Alpha Playtest session in class (Part 2).</li>
+			<li>Adjusted camera slightly, so that more of the scene is visible.</li>
+			<li>Alpha Playtest session in class (Part 2).</li>
 		</ul>
 		<p><u>May 29, 2019</u></p>
 		<ul>
-		  <li>Updated UI so that it would scale and adjust with various screen sizes.</li>
-		  <li>Added a new script to get audio working for crushing walls.</li>
-		  <li>Added a lot of art assets to game overall.</li>
+			<li>Updated UI so that it would scale and adjust with various screen sizes.</li>
+			<li>Added a new script to get audio working for crushing walls.</li>
+			<li>Added a lot of art assets to game overall.</li>
 		</ul>
 		<p><u>May 30, 2019</u></p>
 		<ul>
-		  <li>Added and updated character animations.</li>
-		  <li>Beta Playtest session in class.</li>
+			<li>Added and updated character animations.</li>
+			<li>Beta Playtest session in class.</li>
 		</ul>
 		<p><u>June 8, 2019</u></p>
 		<ul>
-		  <li>Added lots of art assets to game throughout the week.</li>
-		  <li>Postmortem presentation in class on Tuesday, June 4, 2019. Link to presentation is at the top.</li>
-		  <li>Final playtesting in class on June 6, 2019.</li>
+			<li>Added lots of artwork to game throughout the week.</li>
+			<li>Postmortem presentation in class on Tuesday, June 4, 2019. Link to presentation is at the top.</li>
+			<li>Final presentation and playtesting in class on June 6, 2019. Link to final slide is also at the top.</li>
+			<li>Created and added PlayerMove and PlayerJump script.</li>
+			<li>Removed Unity Playground's Jump and Move scripts, thus we now only use Unity Playground's Camera Follow script.</li>
+			<li>Added the jump, idle, and move animations.</li>
+			<li>Added art for the movable boxes, lanterns, and chain links.</li>
+			<li>Added the artwork for the character sprite.</li>
+			<li>Added more effects for gravity.</li>
+			<li>Fixed rotation for character when switching gravity.</li>
+			<li>Created final playtest feedback form.</li>
+
 		</ul>
-		</div><!-- /.log -->
+		<p><u>June 9, 2019</u></p>
+		<ul>
+			<li>Created game trailer, which is linked at the top</li>
+			<li>Applied jump, run, and idle animations to player sprite.</li>
+			<li>Adjusted audio of the crushing wall so that it was in 2D space instead of 3D, since there was a problem with that particular audio clip while loading the main game from the menu.</li>
+			<li>Collected final playtests and feedback responses. Those responses are also linked in the playtest section.</li>
+		</ul>
+		<br />
 		<h2>Playtest Feedback</h2>
 		<p><u>Alpha Part 1 (May 23, 2019)</u></p>
 		<ul>
-		  <li>Character slides around a lot, makes it hard to play.</li>
-		  <li>Should add more levels.</li>
-		  <li>Need to improve graphics.</li>
-		  <li>Too easy to lose box permanently.</li>
-		  <li>Some of the mechanics were hard to see because the camera was too close.</li>
-		  <li>Something placed in the beginning to help showcase the gravity without the player dying would be helpful.</li>
-		  <li>Framerate is bad on WebGL (we can't really do anything about that).</li>
-		  <li>Not enough sprites.</li>
-		  <li>Unclear how the game works.</li>
+			<li>Character slides around a lot, makes it hard to play.</li>
+			<li>Should add more levels.</li>
+			<li>Need to improve graphics.</li>
+			<li>Too easy to lose box permanently.</li>
+			<li>Some of the mechanics were hard to see because the camera was too close.</li>
+			<li>Something placed in the beginning to help showcase the gravity without the player dying would be helpful.</li>
+			<li>Framerate is bad on WebGL (we can't really do anything about that).</li>
+			<li>Not enough sprites.</li>
+			<li>Unclear how the game works.</li>
 		</ul>
 		<p><u>Alpha Part 2 (May 28, 2019)</u></p>
 		<ul>
-		  <li>Some mechanics aren't obvious.</li>
-		  <li>Make it so players can't skip puzzles.</li>
-		  <li>Character slides too much when stopping.</li>
-		  <li>Jumping on things is rather difficult.</li>
-		  <li>Continue world design.</li>
-		  <li>Need to improve theme of game.</li>
+			<li>Some mechanics aren't obvious.</li>
+			<li>Make it so players can't skip puzzles.</li>
+			<li>Character slides too much when stopping.</li>
+			<li>Jumping on things is rather difficult.</li>
+			<li>Continue world design.</li>
+			<li>Need to improve theme of game.</li>
 		</ul>
 		<p><u>Beta (May 30, 2019)</u></p>
 		<ul>
-		  <li>Hard to see where to go next; need more indication of direction.</li>
-		  <li>Should keep controls instruction text up for longer at the beginning.</li>
-		  <li>Player physics: friction too high and stopping player is difficult. Movement felt like sliding on ice.</li>
-		  <li>Some map objects not working right; final screen didn't pop up.</li>
-		  <li>Need to improve collisions and level coloring.</li>
-		  <li>More levels/puzzles, not just to challenge player.</li>
-		  <li>Warning messsages are a little inflammatory.</li>
-		  <li>Platforms should not be solid colors.</li>
-		  <li>Improve character graphics.</li>
-		  <li>Game seems a little boring.</li>
-		  <li>Need to prevent players from skipping things.</li>
-		  <li>Didn't know character had to be touching ground to shift gravity.</li>
-		  <li>Smashing block puzzle is difficult to time properly.</li>
-		  <li>Should implement arrow keys for movement too.</li>
-		  <li>Should not be able to lose big blocks.</li>
-		  <li>Improve puzzle-making.</li>
+			<li>Hard to see where to go next; need more indication of direction.</li>
+			<li>Should keep controls instruction text up for longer at the beginning.</li>
+			<li>Player physics: friction too high and stopping player is difficult. Movement felt like sliding on ice.</li>
+			<li>Some map objects not working right; final screen didn't pop up.</li>
+			<li>Need to improve collisions and level coloring.</li>
+			<li>More levels/puzzles, not just to challenge player.</li>
+			<li>Warning messsages are a little inflammatory.</li>
+			<li>Platforms should not be solid colors.</li>
+			<li>Improve character graphics.</li>
+			<li>Game seems a little boring.</li>
+			<li>Need to prevent players from skipping things.</li>
+			<li>Didn't know character had to be touching ground to shift gravity.</li>
+			<li>Smashing block puzzle is difficult to time properly.</li>
+			<li>Should implement arrow keys for movement too.</li>
+			<li>Should not be able to lose big blocks.</li>
+			<li>Improve puzzle-making.</li>
 		</ul>
 		<p><u>Final (June 6, 2019 - June 9, 2019)</u></p>
 		<ul>
-		  <li>Make character rotate.</li>
-		  <li>Too easy to accidentally skip puzzles.</li>
-		  <li>Animate character.</li>
-		  <li>Orient character in direction of gravity.</li>
-		  <li>Character acts weird.</li>
-		  <li>Would help to have instruction at the beginning.</li>
-		  <li>Would be nice to have a gravity shift indicator.</li>
-		  <li>Shorten crashing boxes puzzle.</li>
-		  <li>Finish the unfinished parts.</li>
+			<li>Make character rotate.</li>
+			<li>Too easy to accidentally skip puzzles.</li>
+			<li>Animate character.</li>
+			<li>Orient character in direction of gravity.</li>
+			<li>Character acts weird.</li>
+			<li>Would help to have instruction at the beginning.</li>
+			<li>Would be nice to have a gravity shift indicator.</li>
+			<li>Shorten crashing boxes puzzle.</li>
+			<li>Finish the unfinished parts.</li>
 		</ul> 
+		<br />
 		<h2>Graphics</h2>
 		<h3>Initial Designs</h3>
 		<figure>
-          <p style="margin-left: 45px"><img src="https://github.com/strobbins/strobbins.github.io/blob/master/puffy-spacesuit-design.png?raw=true" alt="Puffy Spacesuit Design" width="64" height="64"></p>
-          <figcaption>Puffy spacesuit design</figcaption>
+			<p style="margin-left: 45px"><img src="https://github.com/strobbins/strobbins.github.io/blob/master/puffy-spacesuit-design.png?raw=true" alt="Puffy Spacesuit Design" width="64" height="64"></p>
+			<figcaption>Puffy spacesuit design</figcaption>
         </figure>
 		<figure>
-          <p style="margin-left: 45px"><img src="https://github.com/strobbins/strobbins.github.io/blob/master/sleek-spacesuit-design.png?raw=true" alt="Sleek Spacesuit Design" width="64" height="64"></p>
-          <figcaption>Sleek spacesuit design</figcaption>
+			<p style="margin-left: 45px"><img src="https://github.com/strobbins/strobbins.github.io/blob/master/sleek-spacesuit-design.png?raw=true" alt="Sleek Spacesuit Design" width="64" height="64"></p>
+			<figcaption>Sleek spacesuit design</figcaption>
         </figure>
 		<br />
 		<figure>
-		  <img src="https://github.com/strobbins/strobbins.github.io/blob/master/background.PNG?raw=true" alt="Game Background" width="529" height="287.5">
-		  <figcaption>Game Background</figcaption>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/background.PNG?raw=true" alt="Game Background" width="793.5" height="431.25">
+			<figcaption>Game Background</figcaption>
 		</figure>
+		<br />
+		<h3>In-progress Screenshots (June 1, 2019)</h3>
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20in-progress%201.png?raw=true" alt="In-progress screenshot #1" width="885.75" height="366.75">
+			<figcaption>In-progress screenshot of first part of game.</figcaption>
+		</figure>
+		<br />
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20in-progress%202.png?raw=true" alt="In-progress screenshot #2" width="904.5" height="384.75">
+			<figcaption>In-progress screenshot of second part of game</figcaption>
+		</figure>
+		<br />
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20in-progress%20whole.png?raw=true" alt="In-progress screenshot - whole">
+			<figcaption>In-progress screenshot of whole game</figcaption>
+		</figure>
+		<br />
+		<h3>Screenshots from Final Presentation</h3>
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%201.png?raw=true" alt="Character in game">
+			<figcaption>Character in game</figcaption>
+		</figure>
+		<br />
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%202.png?raw=true" alt="Character on platform using inverted gravity">
+			<figcaption>Character on platform using inverted gravity</figcaption>
+		</figure>
+		<br />
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%203.png?raw=true" alt="Character atop block, swinging lantern above">
+			<figcaption>Character atop block, swinging lantern above</figcaption>
+		</figure>
+		<br />
 		<h3>Animations</h3>
 		<figure>
-		  <p style="margin-left: 30px"><img src="https://i.imgur.com/QAVw7BI.gif" alt="Walking Animation" width="64" height="64"></p>
-		  <figcaption>Walking Animation</figcaption>
+			<p style="margin-left: 30px"><img src="https://i.imgur.com/QAVw7BI.gif" alt="Walking Animation" width="64" height="64"></p>
+			<figcaption>Walking Animation</figcaption>
 		</figure>
+		<br />
 		<h2>References</h2>
 		<p>Assets:
 		<ul>
-		  <li><a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-playground-109917">Unity Playground</a></li>
-		  <li><a href="https://assetstore.unity.com/packages/2d/environments/free-asset-2d-handcrafted-art-117049"> 2D Handcrafted Art Asset Pack</a></li>
+			<li><a href="https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-playground-109917">Unity Playground</a>
+				<ul>
+					<li>Camera Follow script</li>
+				</ul>
+			</li>
+			<li><a href="https://assetstore.unity.com/packages/2d/environments/free-asset-2d-handcrafted-art-117049">Free Asset - 2D Handcrafted Art</a>
+				<ul>
+					<li>DemoScene</li>
+					<li>Main Camera</li>
+					<li>Background:
+						<ul>
+							<li>Sky</li>
+							<li>Sk</li>
+							<li>Fog_1</li>
+							<li>Fog_6</li>
+							<li>Mount</li>
+							<li>Clouds</li>
+							<li>Water</li>
+							<li>W1</li>
+							<li>Surface</li>
+							<li>Shade1</li>
+							<li>Shade2</li>
+							<li>Bottom</li>
+							<li>Deep</li>
+							<li>Coral1</li>
+							<li>Coral2</li>
+							<li>Fog_0</li>
+							<li>C3</li>
+							<li>C4</li>
+							<li>Weed1</li>
+							<li>Weed2</li>
+							<li>Weed3</li>
+							<li>W4</li>
+							<li>Pointlight</li>
+							<li>W5</li>
+							<li>FogOver</li>
+							<li>W6</li>
+							<li>Mushrooms</li>
+							<li>M1</li>
+							<li>R1</li>
+							<li>M2</li>
+							<li>R2</li>
+							<li>M3</li>
+							<li>R3</li>
+							<li>M4</li>
+							<li>Column</li>
+							<li>C1</li>
+							<li>Pl1</li>
+							<li>Dust1</li>
+							<li>C2</li>
+							<li>Cor1</li>
+							<li>Liana</li>
+							<li>Pl5</li>
+							<li>Shroom1</li>
+							<li>Shroom2</li>
+							<li>M7</li>
+							<li>M8</li>
+							<li>C5</li>
+							<li>C6</li>
+							<li>Pl8</li>
+							<li>Moss6</li>
+							<li>C7</li>
+							<li>Moss1</li>
+							<li>Moss2</li>
+							<li>Rock7</li>
+							<li>Root1</li>
+						</ul>
+					</li>
+					<li>Foreground:
+						<ul>
+							<li>FloatingRock</li>
+							<li>FR</li>
+							<li>Liana1</li>
+							<li>L2</li>
+							<li>L3</li>
+							<li>Stone1</li>
+							<li>St2</li>
+							<li>Gr1</li>
+							<li>Gr2</li>
+							<li>Gr3</li>
+							<li>Stone2</li>
+							<li>Sprite4_29</li>
+							<li>Liana2</li>
+							<li>Liana3</li>
+						</ul>
+					</li>
+					<li>Midground:
+						<ul>
+							<li>FogBlue</li>
+							<li>Pl2</li>
+							<li>Gr4</li>
+							<li>Gr5</li>
+							<li>Gr6</li>
+							<li>Moss3</li>
+							<li>Pl3</li>
+							<li>Fl1</li>
+							<li>Fl2</li>
+							<li>Pl4</li>
+							<li>Rock2</li>
+							<li>Gr7</li>
+							<li>Sprite4_18</li>
+						</ul>
+					</li>
+					<li>Path:
+						<ul>
+							<li>GrLit</li>
+							<li>FlLit</li>
+							<li>Sprite3_21</li>
+						</ul>
+					</li>
+					<li>Light:
+						<ul>
+							<li>Point Blue</li>
+							<li>Point LightYellow</li>
+							<li>Point LightOrange</li>
+							<li>Grass Light</li>
+							<li>Point LightGreen</li>
+						</ul>
+					</li>
+					<li>Animation:
+						<ul>
+							<li>Caustic</li>
+							<li>Caustic2</li>
+							<li>Surface</li>
+							<li>Algae1</li>
+							<li>Moss1</li>
+							<li>Moss2</li>
+							<li>Moss3</li>
+						</ul>
+					</li>
+					<li>FX:
+						<ul>
+							<li>Sun</li>
+							<li>Sun_Rays</li>
+							<li>Sun_Rays 1</li>
+							<li>Dust1</li>
+							<li>Dust</li>
+							<li>Drops</li>
+							<li>Ripple</li>
+							<li>Bubble</li>
+							<li>WaterSuspension</li>
+							<li>Dust2</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="https://opengameart.org/content/2d-wooden-box">Helper Box Art</a></li>
+			<li><a href="https://111426studio.wordpress.com/2015/04/21/additional-game-assets/">Lantern Art</a></li>
+			<li><a href="https://dumielauxepices.net/wallpaper-341691">Chain Link Art</a></li>
 		</ul>
 	</div><!-- /.container -->
   </body>
