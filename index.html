@@ -12,6 +12,7 @@
 		<p>Team Members: Sarah Robbins, Dakota Sagredo, & Rachael Tustison</p>
 		<p>Project working title: Pachycephalosaurus</p>
 		<p>Title actually used: Gravity Game</p>
+		<p>Unity version used: 2017.4.26f1</p>
 		<p><a href="https://github.com/strobbins/CSS385-Final-Project">Project repository</a></p>
 		<p><a href="https://strobbins.github.io/CSS385-Final-Project/">Project build</a></p>
 		<p><a href="https://docs.google.com/presentation/d/15mDs1_sokYGtzQTrhCO_X7EKdpvryRyeg2mY93e6Spo/edit?usp=sharing">Postmortem presentation</a></p>
@@ -113,63 +114,116 @@
 			<li>Collected final playtests and feedback responses. Those responses are also linked in the playtest section.</li>
 		</ul>
 		<br />
-		<h2>Playtest Feedback</h2>
+		<h2>Playtests</h2>
 		<p><u>Alpha Part 1 (May 23, 2019)</u></p>
 		<ul>
-			<li>Character slides around a lot, makes it hard to play.</li>
-			<li>Should add more levels.</li>
-			<li>Need to improve graphics.</li>
-			<li>Too easy to lose box permanently.</li>
-			<li>Some of the mechanics were hard to see because the camera was too close.</li>
-			<li>Something placed in the beginning to help showcase the gravity without the player dying would be helpful.</li>
-			<li>Framerate is bad on WebGL (we can't really do anything about that).</li>
-			<li>Not enough sprites.</li>
-			<li>Unclear how the game works.</li>
+			<li>Feedback:
+				<ul>
+					<li>Character slides around a lot, makes it hard to play.</li>
+					<li>Should add more levels.</li>
+					<li>Need to improve graphics.</li>
+					<li>Too easy to lose box permanently.</li>
+					<li>Some of the mechanics were hard to see because the camera was too close.</li>
+					<li>Something placed in the beginning to help showcase the gravity without the player dying would be helpful.</li>
+					<li>Framerate is bad on WebGL (we can't really do anything about that).</li>
+					<li>Not enough sprites.</li>
+					<li>Unclear how the game works.</li>
+				</ul>
+			</li>
 		</ul>
 		<p><u>Alpha Part 2 (May 28, 2019)</u></p>
 		<ul>
-			<li>Some mechanics aren't obvious.</li>
-			<li>Make it so players can't skip puzzles.</li>
-			<li>Character slides too much when stopping.</li>
-			<li>Jumping on things is rather difficult.</li>
-			<li>Continue world design.</li>
-			<li>Need to improve theme of game.</li>
+			<li>Feedback:
+				<ul>
+					<li>Some mechanics aren't obvious.</li>
+					<li>Make it so players can't skip puzzles.</li>
+					<li>Character slides too much when stopping.</li>
+					<li>Jumping on things is rather difficult.</li>
+					<li>Continue world design.</li>
+					<li>Need to improve theme of game.</li>
+				</ul>
+			</li>
+			<p></p>
+			<li>Decisions Made (from both parts):
+				<ul>
+					<li>Zoom out camera.</li>
+					<li>Make boxes harder to lose.</li>
+					<li>Place something in beginning so that players don't immediately die when inverting gravity.</li>
+				</ul>
+			</li>
 		</ul>
 		<p><u>Beta (May 30, 2019)</u></p>
 		<ul>
-			<li>Hard to see where to go next; need more indication of direction.</li>
-			<li>Should keep controls instruction text up for longer at the beginning.</li>
-			<li>Player physics: friction too high and stopping player is difficult. Movement felt like sliding on ice.</li>
-			<li>Some map objects not working right; final screen didn't pop up.</li>
-			<li>Need to improve collisions and level coloring.</li>
-			<li>More levels/puzzles, not just to challenge player.</li>
-			<li>Warning messsages are a little inflammatory.</li>
-			<li>Platforms should not be solid colors.</li>
-			<li>Improve character graphics.</li>
-			<li>Game seems a little boring.</li>
-			<li>Need to prevent players from skipping things.</li>
-			<li>Didn't know character had to be touching ground to shift gravity.</li>
-			<li>Smashing block puzzle is difficult to time properly.</li>
-			<li>Should implement arrow keys for movement too.</li>
-			<li>Should not be able to lose big blocks.</li>
-			<li>Improve puzzle-making.</li>
+			<li>Feedback:
+				<ul>
+					<li>Hard to see where to go next; need more indication of direction.</li>
+					<li>Should keep controls instruction text up for longer at the beginning.</li>
+					<li>Player physics: friction too high and stopping player is difficult. Movement felt like sliding on ice.</li>
+					<li>Some map objects not working right; final screen didn't pop up.</li>
+					<li>Need to improve collisions and level coloring.</li>
+					<li>More levels/puzzles, not just to challenge player.</li>
+					<li>Warning messsages are a little inflammatory.</li>
+					<li>Platforms should not be solid colors.</li>
+					<li>Improve character graphics.</li>
+					<li>Game seems a little boring.</li>
+					<li>Need to prevent players from skipping things.</li>
+					<li>Didn't know character had to be touching ground to shift gravity.</li>
+					<li>Smashing block puzzle is difficult to time properly.</li>
+					<li>Should implement arrow keys for movement too.</li>
+					<li>Should not be able to lose big blocks.</li>
+					<li>Improve puzzle-making.</li>
+				</ul>
+			</li>
+			<p></p>
+			<li>Decisions Made:
+				<ul>
+					<li>Add more lights to help guide players.</li>
+					<li>Work on preventing players from skipping puzzles.</li>
+					<li>Continue to make it harder to lose blocks.</li>
+				</ul>
+			</li>
 		</ul>
 		<p><u>Final, in-class (June 6, 2019)</u></p>
 		<ul>
-			<li>Make character rotate.</li>
-			<li>Too easy to accidentally skip puzzles.</li>
-			<li>Animate character.</li>
-			<li>Orient character in direction of gravity.</li>
-			<li>Character acts weird.</li>
-			<li>Would help to have instruction at the beginning.</li>
-			<li>Would be nice to have a gravity shift indicator.</li>
-			<li>Shorten crashing boxes puzzle.</li>
-			<li>Finish the unfinished parts.</li>
-		</ul> 
+			<li>Feedback:
+				<ul>
+					<li>Make character rotate.</li>
+					<li>Too easy to accidentally skip puzzles.</li>
+					<li>Animate character.</li>
+					<li>Orient character in direction of gravity.</li>
+					<li>Character acts weird.</li>
+					<li>Would help to have instruction at the beginning.</li>
+					<li>Would be nice to have a gravity shift indicator.</li>
+					<li>Shorten crashing boxes puzzle.</li>
+					<li>Finish the unfinished parts.</li>
+				</ul>
+			</li>
+			<p></p>
+			<li>Last set of changes planned:
+				<ul>
+					<li>Animating character.</li>
+					<li>Orientate character with gravity.</li>
+					<li>Add more instructions.</li>
+					<li>Slow down crushing wall speed.</li>
+				</ul>
+			</li>
+		</ul>
 		<p><u>Final, outside of class (June 9, 2019)</u></p>
 		<ul>
-			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ZNO7yIjfMlha5xrxGRMoKPx96PJa1pNCOhnnMGywiy0b9Q/viewform?usp=sf_link">Feedback Form</a></li>
-			<li><a href="https://docs.google.com/spreadsheets/d/10Ac1uUppi2sdc6nJLw-WBZdIzQn7Mgw652p6ZKe1qfU/edit?usp=sharing">Feedback Results</a></li>
+			<li>Feedback:
+				<ul>
+					<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe6ZNO7yIjfMlha5xrxGRMoKPx96PJa1pNCOhnnMGywiy0b9Q/viewform?usp=sf_link">Feedback Form</a></li>
+					<li><a href="https://docs.google.com/spreadsheets/d/10Ac1uUppi2sdc6nJLw-WBZdIzQn7Mgw652p6ZKe1qfU/edit?usp=sharing">Feedback Results</a></li>
+				</ul>
+			</li>
+			<p></p>
+			<li>Future implementation recommendations:
+				<ul>
+					<li>Make character face the direction they are moving at all times.</li>
+					<li>Get sound of crushing walls to work in 3D space.</li>
+					<li>Create gravity shift animation for character.</li>
+				</ul>
+			</li>
 		</ul>
 		<br />
 		<h2>Graphics</h2>
@@ -206,18 +260,38 @@
 		<br />
 		<h3>Screenshots from Final Presentation (June 6, 2019)</h3>
 		<figure>
-			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%201.png?raw=true" alt="Character in game">
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%201.png?raw=true" alt="Character in game" width="913.5" height="457.5">
 			<figcaption>Character in game</figcaption>
 		</figure>
 		<br />
 		<figure>
-			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%202.png?raw=true" alt="Character on platform using inverted gravity">
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%202.png?raw=true" alt="Character on platform using inverted gravity" width="770.25" height="602.25">
 			<figcaption>Character on platform using inverted gravity</figcaption>
 		</figure>
 		<br />
 		<figure>
-			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%203.png?raw=true" alt="Character atop block, swinging lantern above">
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/game%20screenshot%203.png?raw=true" alt="Character atop block, swinging lantern above" width="885.75" height="469.5">
 			<figcaption>Character atop block, swinging lantern above</figcaption>
+		</figure>
+		<br />
+		<h3>Art Assets</h3>
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/2DMovableBox.png?raw=true" alt="Helper Box Art" width="256" height="256">
+			<figcaption>Helper Box Art</figcaption>
+		</figure>
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/2dLanterns.png?raw=true" alt="Lantern Art" width="400" height="300">
+			<figcaption>Lantern Art</figcaption>
+		</figure>
+		<figure>
+			<img src="https://github.com/strobbins/strobbins.github.io/blob/master/2dChainLink.jpg?raw=true" alt="Chain-link Art" width="250" height="200">
+			<figcaption>Chain-link Art</figcaption>
+		</figure>
+		<br />
+		<h3>Finalized Character Design</h3>
+		<figure>
+			<p style="margin-left: 40px"><img src="https://github.com/strobbins/CSS385-Final-Project/blob/master/GameFiles/Assets/CSS%20385/Animations/IdleSprite/1.png?raw=true" alt="Astronaut character"></p>
+			<figcaption>Astronaut character</figcaption>
 		</figure>
 		<br />
 		<h3>Animations</h3>
@@ -225,6 +299,8 @@
 			<p style="margin-left: 30px"><img src="https://i.imgur.com/QAVw7BI.gif" alt="Walking Animation" width="64" height="64"></p>
 			<figcaption>Walking Animation</figcaption>
 		</figure>
+		<br />
+		<h3>Screenshots from Finalized Game (June 9, 2019)</h3>
 		<br />
 		<h2>Team Reflection</h2>
 		<p>One of the things our team did really well was supporting each others' ideas and values that we each brought to the project.</p> 
