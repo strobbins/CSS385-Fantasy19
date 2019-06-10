@@ -2,7 +2,7 @@
 
 **Team:** The Pretty Little Princesses (Fantasy 19)
 
-**[Development log](https://strobbins.github.io/)**
+**[Development log & Website](https://strobbins.github.io/)**
 
 **[Final project repository](https://github.com/strobbins/CSS385-Final-Project)**
 
